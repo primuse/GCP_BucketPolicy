@@ -13,5 +13,5 @@ sed -i 's/"${days}"/'"${DAYS}"'/' ./lifecycle.json
 #set lifecycle policy
 gsutil lifecycle set lifecycle.json gs://${BUCKET_NAME}
 
-# check if the policy was enabled
+#check if the policy was enabled
 gsutil lifecycle get gs://${BUCKET_NAME}
